@@ -5,12 +5,8 @@ Created on Tue Nov 25 23:49:25 2014
 @author: PoisonTree
 """
 
-# Export the contents of the User table from a SQLite table into a 
-# sequence of INSERT statements within a file. This is very similar to 
-# what you did in Assignment 4. However, you have to add a unique ID column 
-# which has to be a string (you cannot use any numbers). Hint: one possibility 
-# is to replace digits with letters, e.g., chr(ord('a')+1) gives you a 'b' 
-# and chr(ord('a')+2) returns a 'c'
+# Exporting the contents of the User table from a SQLite table into a 
+# sequence of INSERT statements within a file. 
 
 import sqlite3
 
