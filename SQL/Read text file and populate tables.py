@@ -2,7 +2,7 @@
 """
 Created on Mon Nov 24 18:47:18 2014
 
-@author: SGHAZVIN
+@author: 
 """
 
 import json
