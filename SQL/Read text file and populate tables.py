@@ -2,7 +2,6 @@
 """
 Created on Mon Nov 24 18:47:18 2014
 
-@author: SGHAZVIN
 """
 
 import json
@@ -79,7 +78,7 @@ cursor.execute(TweetTable)
 #Part d, read the tweets from the tweets.txt file, fill in the tables.
 start = time.time()
 
-tweets_file= open("C:/Users/PoisonTree/Documents/CDM_455/Final/tweets2.txt", "r",encoding="utf8")
+tweets_file= open("C:/Users/MASKED_PATH/tweets2.txt", "r",encoding="utf8")
 tweet_dict = {}
 for i in range(2500):
     each_line = tweets_file.readline().replace("\n","")
