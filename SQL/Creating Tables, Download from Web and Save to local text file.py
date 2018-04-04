@@ -2,7 +2,6 @@
 """
 Created on Fri Nov 21 21:32:58 2014
 
-@author: PoisonTree
 """
 
 import urllib.request as urllib
@@ -84,7 +83,7 @@ tweet_dict = {}
 start = time.time()
 while count < 2500:
     str_response = response.readline().decode("utf8")
-    with open("C:/Users/PoisonTree/Documents/CDM_455/Final/tweets2.txt", "a", encoding="utf-8") as out_tweet:
+    with open("C:/Users/MASKED_PATH/tweets2.txt", "a", encoding="utf-8") as out_tweet:
         out_tweet.write(str_response)
         out_tweet.close()
     count += 1
