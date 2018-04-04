@@ -2,7 +2,6 @@
 """
 Created on Mon Nov 24 00:40:25 2014
 
-@author: PoisonTree
 """
 
 import urllib.request as urllib
@@ -63,7 +62,7 @@ CREATE TABLE Geo
 );
 """
 # Open a connection to database
-conn = sqlite3.connect("csc455_Final.db")
+conn = sqlite3.connect("MASKED_DB.db")
 
 # Request a cursor from the database
 cursor = conn.cursor()
@@ -78,7 +77,7 @@ cursor.execute(GeoTable)
 cursor.execute(TweetTable)
 
 #Part c, download 500,000 lines worth of tweets, fill in the tables.
-response = urllib.urlopen('http://rasinsrv07.cstcis.cti.depaul.edu/CSC455/OneDayOfTweets.txt')
+response = urllib.urlopen('MASKED_LINK/OneDayOfTweets.txt')
 count = 0
 tweet_dict = {}
 
