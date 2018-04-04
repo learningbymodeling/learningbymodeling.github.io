@@ -116,7 +116,7 @@ for i in range(len(organized_dictionary['geo'])):
         organized_dictionary['geo'][i]['latitude'] = format(decimal.Decimal(digitlat), '.4f')
         organized_dictionary['geo'][i]['longitude'] = format(decimal.Decimal(digitlong), '.4f')
 print(organized_dictionary['geo'])
-with open('C:/Users/PoisonTree/Documents/CDM_455/Final/4a_output.txt', 'a', encoding='utf-8') as f:
+with open('C:/Users/MASKED_OUTPUT/4a_output.txt', 'a', encoding='utf-8') as f:
     f.write(str(organized_dictionary['geo']))
 
 # For the Tweet table, replace NULLs by a reference to ‘Unknown’ entry 
@@ -133,7 +133,7 @@ for i in range(len(organized_dictionary['tweets'])):
     else:
         known_list.append(organized_dictionary['tweets'][i]['id'])
         known_locations = len(known_list)
-with open('C:/Users/PoisonTree/Documents/CDM_455/Final/4b_output.txt', 'a', encoding='utf-8') as f:
+with open('C:/Users/MASKED_OUTPUT/4b_output.txt', 'a', encoding='utf-8') as f:
     f.write("Number of unknown locations:" + str(len(unknown_list)) +"\n")
     f.write("Number of known locations:"+ str(len(known_list)) +"\n")
     summ=len(unknown_list)+len(known_list)
@@ -156,7 +156,7 @@ for i in range(len(organized_dictionary['user'])):
         organized_dictionary['user'][i]['contains_name'] = 'True'
     elif organized_dictionary['user'][i]['description'] is not None and organized_dictionary['user'][i]['name'] in organized_dictionary['user'][i]['description']:
         organized_dictionary['user'][i]['contains_name'] = 'True'
-with open('C:/Users/PoisonTree/Documents/CDM_455/Final/4c_output.txt', 'a', encoding='utf-8') as f:
+with open('C:/Users/MASKED_OUTPUT/4c_output.txt', 'a', encoding='utf-8') as f:
     f.write(str(organized_dictionary['user'])+"\n")
     
 
