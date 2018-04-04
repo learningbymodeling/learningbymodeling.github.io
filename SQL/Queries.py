@@ -2,7 +2,6 @@
 """
 Created on Tue Nov 25 13:36:16 2014
 
-@author: PoisonTree
 """
 
 import os
