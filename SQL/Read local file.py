@@ -12,7 +12,7 @@ import time
 # file from 1-b and perform the equivalent computation for parts 2-i and 2-ii only. 
 # How does the runtime compare to the SQL queries?
 
-tweets_file= open("C:/Users/PoisonTree/Documents/CDM_455/Final/tweets2.txt", "r",encoding="utf8")
+tweets_file= open("C:/Users/MASKED_PATH/tweets2.txt", "r",encoding="utf8")
 tweet_dict = {}
 
 for i in range(2500):
