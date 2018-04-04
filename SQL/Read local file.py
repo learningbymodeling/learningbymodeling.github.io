@@ -2,7 +2,6 @@
 """
 Created on Tue Nov 25 20:21:59 2014
 
-@author: PoisonTree
 """
 import re
 import json
