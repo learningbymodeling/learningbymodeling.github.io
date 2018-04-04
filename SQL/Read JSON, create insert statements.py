@@ -2,7 +2,6 @@
 """
 Created on Wed Nov 26 06:17:34 2014
 
-@author: PoisonTree
 """
 
 # Create a similar collection of INSERT for the User table by 
@@ -19,7 +18,7 @@ alpha ={'1':'a','2':'b','3':'c','4':'d','5':'e','6':'f','7':'g','8':'h','9':'i',
 #Part d, read the tweets from the tweets.txt file, fill in the tables.
 start = time.time()
 
-tweets_file= open("C:/Users/PoisonTree/Documents/CDM_455/Final/tweets.txt", "r",encoding="utf8")
+tweets_file= open("C:/Users/MASKED_PATH/tweets.txt", "r",encoding="utf8")
 tweet_dict = {}
 for i in range(60):
     each_line = tweets_file.readline().replace("\n","")
@@ -44,7 +43,7 @@ for tweet_obs in tweet_dict:
     single_user_data.append(string_id)
 
     statement = 'INSERT OR IGNORE INTO User VALUES ({},{},{},{},{},{});'.format(*single_user_data)+"\n"
-    with open('C:/Users/PoisonTree/Documents/CDM_455/Final/part3b.txt', 'a', encoding='utf-8') as f:
+    with open('C:/Users/MASKED_PATH/Final/part3b.txt', 'a', encoding='utf-8') as f:
         f.write(statement)
 end = time.time()
 print("The amount of time it took to fill the tables", end-start)
