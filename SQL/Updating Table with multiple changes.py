@@ -2,7 +2,6 @@
 """
 Created on Wed Nov 26 20:56:47 2014
 
-@author: PoisonTree
 """
 
 
@@ -56,12 +55,12 @@ def generateInsert(tablename):
             # print(values)
             
             # print("LOOK HERE", values)
-            with open('C:/Users/PoisonTree/Documents/CDM_455/Final/all_tables.txt', 'a', encoding='utf-8') as f:
+            with open('C:/Users/MASKED_PATH/all_tables.txt', 'a', encoding='utf-8') as f:
                 f.write(str(values))
                 f.write("|")
-        with open('C:/Users/PoisonTree/Documents/CDM_455/Final/all_tables.txt', 'a', encoding='utf-8') as f:
+        with open('C:/Users/MASKED_PATH/all_tables.txt', 'a', encoding='utf-8') as f:
                 f.write("TABLEDELIMITER")
-#            with open('C:/Users/PoisonTree/Documents/CDM_455/Final/all_tables.txt', 'a') as f:
+#            with open('C:/Users/MASKED_PATH/all_tables.txt', 'a') as f:
 #                json.dump(values, f)
             # print("STATEMENT==",statement)
 # Open a connection to database
@@ -79,7 +78,7 @@ conn.commit()
 conn.close()
 # f.close()
 # Open a file
-f = open('C:/Users/PoisonTree/Documents/CDM_455/Final/all_tables.txt', 'r', encoding='utf-8')
+f = open('C:/Users/MASKED_PATH/all_tables.txt', 'r', encoding='utf-8')
 for row in f.readlines():
     # Items holds all tweets
     separate_tables= row.split('TABLEDELIMITER')
